@@ -114,7 +114,7 @@
             text-align: center;
             color: white;
             position: relative;
-            height: 140vh;
+            height: 180vh; /* Increased from 140vh to 180vh for a much larger book section */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -349,8 +349,12 @@
             /* Book section adjustments */
             #book {
                 height: auto;
-                min-height: 100vh;
+                min-height: 130vh; /* Increased from 100vh to 130vh for larger mobile display */
                 padding: 120px 0 60px;
+            }
+            
+            #book::before {
+                background-color: rgba(0, 0, 0, 0.8); /* Darker overlay on mobile */
             }
             
             .coming-soon {
