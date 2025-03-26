@@ -383,6 +383,32 @@
             font-size: 0.9rem;
             letter-spacing: 1px;
         }
+
+        .book-cover-image {
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto 40px;
+    display: block;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+    padding-right: 44px;
+}
+
+/* Add responsive styling for the book image */
+@media (max-width: 768px) {
+    .book-cover-image {
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-cover-image {
+        max-width: 250px;
+        margin-bottom: 25px;
+    }
+}
         
         /* Responsive Design */
         @media (max-width: 992px) {
@@ -573,6 +599,7 @@
             <h2 class="coming-soon">COMING SOON</h2>
             <h2>May 2025</h2>
             <br>
+            <img src="book-cover.png" alt="The Evidence Of Her Love - Book Cover" class="book-cover-image">
             <p class="book-description">
                 <strong>The Evidence Of Her Love</strong> - A memoir about the life story of Javier Chavez
             </p>
@@ -605,7 +632,7 @@
         <div class="container">
             <h2 class="social-heading">Follow me on social</h2>
             <div class="social-icons">
-                <a href="https://www.facebook.com/divinereflectionsbyjavierchavez?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+                <!-- <a href="https://www.facebook.com/divinereflectionsbyjavierchavez?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a> -->
                 <a href="https://www.instagram.com/reflectionsbyjavy/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.youtube.com/@reflectionsbyjavy" target="_blank"><i class="fab fa-youtube"></i></a>
                 <a href="https://www.tiktok.com/@javier.chavez018?_t=ZP-8usKFGbhKnv&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
