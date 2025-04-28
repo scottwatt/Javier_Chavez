@@ -144,12 +144,38 @@
         }
 
         .coming-soon {
-            font-size: 3.5rem;
-            margin-bottom: 2rem;
-            color: #ffffff;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            letter-spacing: 2px;
-        }
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.coming-soon:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .coming-soon:after {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .coming-soon:after {
+        width: 60px;
+    }
+}
 
         /* Style for the release date heading */
         #book h2:not(.coming-soon) {
@@ -596,8 +622,7 @@
     <!-- Book Section -->
     <section id="book">
         <div class="container">
-            <h2 class="coming-soon">Now Availabe</h2>
-            <!-- <h2>May 2025</h2> -->
+            <h2 class="coming-soon">Now Available</h2>
             <br>
             <img src="book-cover.png" alt="The Evidence Of Her Love - Book Cover" class="book-cover-image">
             <p class="book-description">
